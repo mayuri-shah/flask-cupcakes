@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>CupCakes</title>
+    
+</head>
+<body>
+   
+
+    <!--<table>
+        <tr aria-colspan="3"  >
+            <td ><h1>Available CupCakes</h1></td>
+        </tr>
+    
+            {% for c3 in cakes|batch(2) %}
+            <tr>
+               {% for c in c3%}
+               <td>
+                <img src="{{c.image}}" height="200px" width="200px">   
+                <P><a href=''>{{c.flavor}}</a></P>
+                <h3>Rating:{{c.rating}}, Size:{{c.size}}</h3>
+                <button class="delete-cupcake" data-id="{{c.id}}">X</button>
+                </td>
+                {% endfor %}
+                </tr>
+            {% endfor %}
+        
+</table>-->
+
+<table id="cupcake-table">
+    
+</table>   
+      
+    <button class="display-form btn btn-success" id >Add cupcake</button>
+
+    
+
+    <div id="form_container">
+      <div id="form_sub_container1" style="display: block;">
+      
+      </div>
+
+      <div id="form_add" style="display: none;">
+        
+        <form id="cupcake-form">
+          <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Flavor</span>
+              <input type="text" id="txt-flavor" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Size</span>
+              <input type="text" id = "txt-size" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+  
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Rating</span>
+              <input type="text" id="txt-rating" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+  
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Image</span>
+              <input type="text" id = "txt-image" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div>
+  
+              <button class="btn btn-success" type="submit">Add</button>
+            </div>
+            
+      </form>
+      </div>
+</div>
+<table id = "table-load" >
+  
+</table>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  
+    <script src="static/cupcake.js"></script>
+</body>
+</html>
